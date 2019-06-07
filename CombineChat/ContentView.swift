@@ -15,31 +15,36 @@ struct ContentView: View {
     @State var messages: [ChatMessage]
     
     func sendText() {
-        service.send(message: textToSend)
+        service.send(message: "Message!!!")
+        messages.append(ChatMessage(message: textToSend, username: "Me"))
+        
         textToSend = ""
+        UIApplication.shared.keyWindow?.endEditing(true)
+        
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                EmptyView().onAppear {
-                    self.service.delegate = self
-                }
-                
-                List(0...1) { item in
-                    Text("Incoming Message")
+                List(messages) { chatMessage in
+                    MessageRow(chatMessage: chatMessage)
                 }
                 
                 HStack {
                     TextField($textToSend,
                               placeholder: Text("Message"),
-                              onEditingChanged: {_ in }) {
-                                self.sendText()
+                              onEditingChanged: {_ in
+                                print("Editing changed")
+                    }) {
+                        self.sendText()
                     }
                 }
                 }
                 .padding(.bottom)
                 .navigationBarTitle(Text("Combine Chat"))
+        }
+            .onAppear {
+                self.service.delegate = self
         }
     }
 }
@@ -50,14 +55,14 @@ extension ContentView: ChatServiceDelegate {
     }
     
     func messageReceived(manager: ChatService, message: ChatMessage) {
-        
+        messages.append(message)
     }
 }
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView(textToSend: .constant(""), messages: [])
+        ContentView(textToSend: .constant(""), messages: [ChatMessage(message: "Hello world", username: "Thommyboy")])
     }
 }
 #endif

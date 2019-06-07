@@ -15,6 +15,7 @@
 		CDF7A5CD22AAF65F00981BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5CB22AAF65F00981BD6 /* LaunchScreen.storyboard */; };
 		CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */; };
 		CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */; };
+		E519318D22AB00B6003AFA62 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519318C22AB00B6003AFA62 /* MessageRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CDF7A5CE22AAF65F00981BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		E519318C22AB00B6003AFA62 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				CDF7A5C822AAF65F00981BD6 /* Preview Content */,
 				CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */,
 				CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */,
+				E519318C22AB00B6003AFA62 /* MessageRow.swift */,
 			);
 			path = CombineChat;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				CDF7A5C122AAF65E00981BD6 /* AppDelegate.swift in Sources */,
 				CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */,
+				E519318D22AB00B6003AFA62 /* MessageRow.swift in Sources */,
 				CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */,
 				CDF7A5C322AAF65E00981BD6 /* SceneDelegate.swift in Sources */,
 				CDF7A5C522AAF65E00981BD6 /* ContentView.swift in Sources */,
@@ -294,13 +298,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "CombineChat/Preview\\ Content";
+				DEVELOPMENT_TEAM = 47P2QP4NY9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CombineChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ritterfeld.CombineChat;
+				PRODUCT_BUNDLE_IDENTIFIER = de.niklasholloh.wwdc.2o19.CombineChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,13 +318,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "CombineChat/Preview\\ Content";
+				DEVELOPMENT_TEAM = 47P2QP4NY9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CombineChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ritterfeld.CombineChat;
+				PRODUCT_BUNDLE_IDENTIFIER = de.niklasholloh.wwdc.2o19.CombineChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

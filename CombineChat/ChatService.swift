@@ -52,15 +52,17 @@ class ChatService: NSObject{
     func send(message : String) {
         print("sendingMessage: \(message) to \(session.connectedPeers.count) peers")
         
-        if session.connectedPeers.count > 0 {
-            do {
-                try self.session.send(message.data(using: .utf8)!, toPeers: session.connectedPeers, with: .reliable)
-            }
-            catch let error {
-                print("Error for sending: \(error)")
-            }
+        guard session.connectedPeers.count > 0 else {
+            print("No clients connected!")
+            return
         }
         
+        do {
+            try self.session.send(message.data(using: .utf8)!, toPeers: session.connectedPeers, with: .reliable)
+        }
+        catch let error {
+            print("Error for sending: \(error)")
+        }
     }
     
 }
