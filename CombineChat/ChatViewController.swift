@@ -16,6 +16,9 @@ class ChatViewController: UIViewController {
     @IBOutlet var peerCountBarItem: UIBarButtonItem?
     @IBOutlet var inputField: UITextField?
     @IBOutlet var tableView: UITableView?
+    @IBOutlet weak var messageStackView: UIStackView!
+    
+    var keyboardViewDecorator: KeyboardViewDecorator
     
     var messages = [ChatMessage]()
     
@@ -23,6 +26,7 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         
         service.delegate = self
+        keyboardViewDecorator = KeyboardViewDecorator(paddedView: messageStackView, minimumPadding: 0)
     }
     
     @IBAction func textFieldDidEndEditing() {

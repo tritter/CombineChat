@@ -152,7 +152,6 @@
 				CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */,
 				E519319322AB0929003AFA62 /* ChatViewController.swift in Sources */,
 				CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */,
-				CDF7A5C322AAF65E00981BD6 /* SceneDelegate.swift in Sources */,
 				CDF7A5D922AB0B0400981BD6 /* ChatMessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +296,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.niklasholloh.wwdc.2o19.CombineChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ritterfeld.2o19.CombineChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,7 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.niklasholloh.wwdc.2o19.CombineChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ritterfeld.2o19.CombineChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
