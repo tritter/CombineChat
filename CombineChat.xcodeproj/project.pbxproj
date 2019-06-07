@@ -10,7 +10,6 @@
 		CDF7A5C122AAF65E00981BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5C022AAF65E00981BD6 /* AppDelegate.swift */; };
 		CDF7A5C322AAF65E00981BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5C222AAF65E00981BD6 /* SceneDelegate.swift */; };
 		CDF7A5C722AAF65F00981BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */; };
-		CDF7A5CA22AAF65F00981BD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5C922AAF65F00981BD6 /* Preview Assets.xcassets */; };
 		CDF7A5CD22AAF65F00981BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5CB22AAF65F00981BD6 /* LaunchScreen.storyboard */; };
 		CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */; };
 		CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */; };
@@ -24,7 +23,6 @@
 		CDF7A5C022AAF65E00981BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF7A5C222AAF65E00981BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CDF7A5C922AAF65F00981BD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDF7A5CC22AAF65F00981BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF7A5CE22AAF65F00981BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */,
 				CDF7A5CB22AAF65F00981BD6 /* LaunchScreen.storyboard */,
 				CDF7A5CE22AAF65F00981BD6 /* Info.plist */,
-				CDF7A5C822AAF65F00981BD6 /* Preview Content */,
 				CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */,
 				CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */,
 				E519318E22AB0833003AFA62 /* MessageObject.swift */,
@@ -77,14 +74,6 @@
 				E519319222AB0929003AFA62 /* ChatViewController.swift */,
 			);
 			path = CombineChat;
-			sourceTree = "<group>";
-		};
-		CDF7A5C822AAF65F00981BD6 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CDF7A5C922AAF65F00981BD6 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +135,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF7A5CD22AAF65F00981BD6 /* LaunchScreen.storyboard in Resources */,
-				CDF7A5CA22AAF65F00981BD6 /* Preview Assets.xcassets in Resources */,
 				CDF7A5C722AAF65F00981BD6 /* Assets.xcassets in Resources */,
 				E519319122AB0902003AFA62 /* Main.storyboard in Resources */,
 			);
@@ -232,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -286,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
