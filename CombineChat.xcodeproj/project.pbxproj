@@ -13,6 +13,8 @@
 		CDF7A5C722AAF65F00981BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */; };
 		CDF7A5CA22AAF65F00981BD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5C922AAF65F00981BD6 /* Preview Assets.xcassets */; };
 		CDF7A5CD22AAF65F00981BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5CB22AAF65F00981BD6 /* LaunchScreen.storyboard */; };
+		CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */; };
+		CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CDF7A5C922AAF65F00981BD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDF7A5CC22AAF65F00981BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF7A5CE22AAF65F00981BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				CDF7A5CB22AAF65F00981BD6 /* LaunchScreen.storyboard */,
 				CDF7A5CE22AAF65F00981BD6 /* Info.plist */,
 				CDF7A5C822AAF65F00981BD6 /* Preview Content */,
+				CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */,
+				CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */,
 			);
 			path = CombineChat;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF7A5C122AAF65E00981BD6 /* AppDelegate.swift in Sources */,
+				CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */,
+				CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */,
 				CDF7A5C322AAF65E00981BD6 /* SceneDelegate.swift in Sources */,
 				CDF7A5C522AAF65E00981BD6 /* ContentView.swift in Sources */,
 			);
