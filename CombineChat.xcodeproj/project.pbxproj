@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CDF7A5C122AAF65E00981BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5C022AAF65E00981BD6 /* AppDelegate.swift */; };
-		CDF7A5C322AAF65E00981BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5C222AAF65E00981BD6 /* SceneDelegate.swift */; };
 		CDF7A5C722AAF65F00981BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */; };
 		CDF7A5CD22AAF65F00981BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5CB22AAF65F00981BD6 /* LaunchScreen.storyboard */; };
 		CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		CDF7A5BD22AAF65E00981BD6 /* CombineChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF7A5C022AAF65E00981BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDF7A5C222AAF65E00981BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF7A5CC22AAF65F00981BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF7A5CE22AAF65F00981BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				CDF7A5C022AAF65E00981BD6 /* AppDelegate.swift */,
-				CDF7A5C222AAF65E00981BD6 /* SceneDelegate.swift */,
 				CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */,
 				CDF7A5CB22AAF65F00981BD6 /* LaunchScreen.storyboard */,
 				CDF7A5CE22AAF65F00981BD6 /* Info.plist */,
@@ -152,7 +149,6 @@
 				E519319322AB0929003AFA62 /* ChatViewController.swift in Sources */,
 				E519318F22AB0833003AFA62 /* MessageObject.swift in Sources */,
 				CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */,
-				CDF7A5C322AAF65E00981BD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +285,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "CombineChat/Preview\\ Content";
 				DEVELOPMENT_TEAM = 47P2QP4NY9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CombineChat/Info.plist;
@@ -309,7 +304,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "CombineChat/Preview\\ Content";
 				DEVELOPMENT_TEAM = 47P2QP4NY9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CombineChat/Info.plist;
