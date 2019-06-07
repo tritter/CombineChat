@@ -15,6 +15,7 @@
 		E519318F22AB0833003AFA62 /* MessageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519318E22AB0833003AFA62 /* MessageObject.swift */; };
 		E519319122AB0902003AFA62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E519319022AB0902003AFA62 /* Main.storyboard */; };
 		E519319322AB0929003AFA62 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519319222AB0929003AFA62 /* ChatViewController.swift */; };
+		E519319522AB0C27003AFA62 /* KeyboardViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519319422AB0C27003AFA62 /* KeyboardViewDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E519318E22AB0833003AFA62 /* MessageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageObject.swift; sourceTree = "<group>"; };
 		E519319022AB0902003AFA62 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E519319222AB0929003AFA62 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E519319422AB0C27003AFA62 /* KeyboardViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E519318E22AB0833003AFA62 /* MessageObject.swift */,
 				E519319022AB0902003AFA62 /* Main.storyboard */,
 				E519319222AB0929003AFA62 /* ChatViewController.swift */,
+				E519319422AB0C27003AFA62 /* KeyboardViewDecorator.swift */,
 			);
 			path = CombineChat;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF7A5C122AAF65E00981BD6 /* AppDelegate.swift in Sources */,
+				E519319522AB0C27003AFA62 /* KeyboardViewDecorator.swift in Sources */,
 				CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */,
 				E519319322AB0929003AFA62 /* ChatViewController.swift in Sources */,
 				E519318F22AB0833003AFA62 /* MessageObject.swift in Sources */,
