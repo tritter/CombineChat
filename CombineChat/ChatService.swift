@@ -17,7 +17,7 @@ protocol ChatServiceDelegate {
 }
 
 class ChatService: NSObject{
-    private let ColorServiceType = "ritter-holloh-chat-service"
+    private let ColorServiceType = "combine-chat"
     
     private let myPeerId = MCPeerID(displayName: UIDevice.current.name)
     private let serviceAdvertiser : MCNearbyServiceAdvertiser
