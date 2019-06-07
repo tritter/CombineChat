@@ -16,6 +16,8 @@
 		CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */; };
 		CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */; };
 		E519318D22AB00B6003AFA62 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519318C22AB00B6003AFA62 /* MessageRow.swift */; };
+		E519318F22AB0833003AFA62 /* MessageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519318E22AB0833003AFA62 /* MessageObject.swift */; };
+		E519319122AB0902003AFA62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E519319022AB0902003AFA62 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		E519318C22AB00B6003AFA62 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		E519318E22AB0833003AFA62 /* MessageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageObject.swift; sourceTree = "<group>"; };
+		E519319022AB0902003AFA62 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				CDF7A5D422AAF6BD00981BD6 /* ChatService.swift */,
 				CDF7A5D622AAF86F00981BD6 /* ChatMessage.swift */,
 				E519318C22AB00B6003AFA62 /* MessageRow.swift */,
+				E519318E22AB0833003AFA62 /* MessageObject.swift */,
+				E519319022AB0902003AFA62 /* Main.storyboard */,
 			);
 			path = CombineChat;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 				CDF7A5CD22AAF65F00981BD6 /* LaunchScreen.storyboard in Resources */,
 				CDF7A5CA22AAF65F00981BD6 /* Preview Assets.xcassets in Resources */,
 				CDF7A5C722AAF65F00981BD6 /* Assets.xcassets in Resources */,
+				E519319122AB0902003AFA62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +164,7 @@
 			files = (
 				CDF7A5C122AAF65E00981BD6 /* AppDelegate.swift in Sources */,
 				CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */,
+				E519318F22AB0833003AFA62 /* MessageObject.swift in Sources */,
 				E519318D22AB00B6003AFA62 /* MessageRow.swift in Sources */,
 				CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */,
 				CDF7A5C322AAF65E00981BD6 /* SceneDelegate.swift in Sources */,

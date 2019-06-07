@@ -11,16 +11,15 @@ import SwiftUI
 struct ContentView: View {
     var service = ChatService()
     
-    @Binding var textToSend: String
+    @Binding var messageToSend: MessageObject
     @State var messages: [ChatMessage]
     
     func sendText() {
         service.send(message: "Message!!!")
-        messages.append(ChatMessage(message: textToSend, username: "Me"))
+        messages.append(ChatMessage(message: messageToSend.message, username: "Me"))
         
-        textToSend = ""
+        messageToSend = MessageObject(message: "")
         UIApplication.shared.keyWindow?.endEditing(true)
-        
     }
     
     var body: some View {
@@ -31,10 +30,10 @@ struct ContentView: View {
                 }
                 
                 HStack {
-                    TextField($textToSend,
+                    TextField($messageToSend.message,
                               placeholder: Text("Message"),
                               onEditingChanged: {_ in
-                                print("Editing changed")
+                                
                     }) {
                         self.sendText()
                     }
