@@ -7,13 +7,8 @@
 //
 
 import Foundation
-import SwiftUI
 
-struct ChatMessage: Identifiable {
-    var id: Int {
-        return message.hashValue
-    }
-    
+struct ChatMessage {
     let message: String
     let username: String
 }
