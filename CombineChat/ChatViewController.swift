@@ -16,24 +16,28 @@ class ChatViewController: UIViewController {
     @IBOutlet var peerCountBarItem: UIBarButtonItem?
     @IBOutlet var inputField: UITextField?
     @IBOutlet var tableView: UITableView?
-    @IBOutlet weak var messageStackView: UIStackView!
+    @IBOutlet weak var footerView: UIView!
     
-    var keyboardViewDecorator: KeyboardViewDecorator
+    var keyboardViewDecorator: KeyboardViewDecorator?
     
     var messages = [ChatMessage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView?.tableFooterView = UIView()
         
         service.delegate = self
-        keyboardViewDecorator = KeyboardViewDecorator(paddedView: messageStackView, minimumPadding: 0)
+        keyboardViewDecorator = KeyboardViewDecorator(paddedView: footerView, minimumPadding: 0)
+        peerCountBarItem?.title = "\(service.session.connectedPeers.count)"
     }
     
-    @IBAction func textFieldDidEndEditing() {
-        if let message = inputField?.text {
+    @IBAction func send() {
+        if let message = inputField?.text, message.count > 0 {
             service.send(message: message)
-            let myMessage = ChatMessage(message: message, username: "Me")
+            let myMessage = ChatMessage(message: message, username: "Me", my: true)
             addMessage(message: myMessage)
+            inputField?.text = nil
+            inputField?.resignFirstResponder()
         }
     }
     
@@ -43,14 +47,26 @@ class ChatViewController: UIViewController {
     }
 }
 
+//MARK: TextfieldDelegate
+extension ChatViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        send()
+        return true
+    }
+}
+
 // MARK: ChatServiceDelegate
 extension ChatViewController: ChatServiceDelegate {
     func connectedDevicesChanged(manager: ChatService, connectedDevices: [String]) {
-        peerCountBarItem?.title = "\(connectedDevices.count)"
+        DispatchQueue.main.async {
+            self.peerCountBarItem?.title = "\(connectedDevices.count)"
+        }
     }
     
     func messageReceived(manager: ChatService, message: ChatMessage) {
-        addMessage(message: message)
+        DispatchQueue.main.async {
+            self.addMessage(message: message)
+        }
     }
 }
 

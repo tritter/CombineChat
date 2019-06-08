@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDD3CEE822AB35D500829673 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD3CEE722AB35D500829673 /* BubbleView.swift */; };
 		CDF7A5C122AAF65E00981BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7A5C022AAF65E00981BD6 /* AppDelegate.swift */; };
 		CDF7A5C722AAF65F00981BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */; };
 		CDF7A5CD22AAF65F00981BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF7A5CB22AAF65F00981BD6 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDD3CEE722AB35D500829673 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		CDF7A5BD22AAF65E00981BD6 /* CombineChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF7A5C022AAF65E00981BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF7A5C622AAF65F00981BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				E519319222AB0929003AFA62 /* ChatViewController.swift */,
 				CDF7A5D822AB0B0400981BD6 /* ChatMessageCell.swift */,
 				E519319422AB0C27003AFA62 /* KeyboardViewDecorator.swift */,
+				CDD3CEE722AB35D500829673 /* BubbleView.swift */,
 			);
 			path = CombineChat;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				CDF7A5C122AAF65E00981BD6 /* AppDelegate.swift in Sources */,
 				E519319522AB0C27003AFA62 /* KeyboardViewDecorator.swift in Sources */,
+				CDD3CEE822AB35D500829673 /* BubbleView.swift in Sources */,
 				CDF7A5D522AAF6BD00981BD6 /* ChatService.swift in Sources */,
 				E519319322AB0929003AFA62 /* ChatViewController.swift in Sources */,
 				CDF7A5D722AAF86F00981BD6 /* ChatMessage.swift in Sources */,
@@ -289,7 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 47P2QP4NY9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CombineChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,7 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 47P2QP4NY9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CombineChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

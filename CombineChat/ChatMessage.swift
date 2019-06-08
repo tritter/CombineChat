@@ -11,4 +11,5 @@ import Foundation
 struct ChatMessage {
     let message: String
     let username: String
+    let my: Bool
 }

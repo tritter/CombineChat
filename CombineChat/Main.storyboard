@@ -6,14 +6,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="3kx-aA-3ZZ">
             <objects>
                 <navigationController id="oIy-Rd-Kie" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zBT-w1-wMB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="zBT-w1-wMB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -24,98 +25,146 @@
             </objects>
             <point key="canvasLocation" x="-535" y="114"/>
         </scene>
-        <!--Combine Chat-->
+        <!--CombineChat-->
         <scene sceneID="Z2h-2V-l2I">
             <objects>
-                <viewController title="Combine Chat" id="RE6-y3-bX0" customClass="ChatViewController" sceneMemberID="viewController">
+                <viewController id="RE6-y3-bX0" customClass="ChatViewController" customModule="CombineChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="idQ-j5-WKf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZvF-ru-Gb4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZvF-ru-Gb4">
                                 <rect key="frame" x="0.0" y="88" width="414" height="740"/>
                                 <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChatMessageCellIdentifier" id="xBu-vL-Yd9" customClass="ChatMessageCell" customModule="CombineChat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="42"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChatMessageCellIdentifier" id="xBu-vL-Yd9" customClass="ChatMessageCell" customModule="CombineChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="91.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xBu-vL-Yd9" id="weI-Nj-a8X">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="91.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jwe-pf-FuU">
-                                                    <rect key="frame" x="10" y="0.0" width="394" height="42"/>
+                                                    <rect key="frame" x="15" y="5" width="384" height="81.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-RB-9fE">
-                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="16.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="16"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="opaqueSeparatorColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Hello World!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bA-4u-rJW">
-                                                            <rect key="frame" x="0.0" y="21.5" width="394" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQI-Hd-GEc">
+                                                            <rect key="frame" x="0.0" y="21" width="384" height="60.5"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNF-zB-ZfV" customClass="BubbleView" customModule="CombineChat" customModuleProvider="target">
+                                                                    <rect key="frame" x="5" y="5" width="374" height="50.5"/>
+                                                                    <color key="backgroundColor" cocoaTouchSystemColor="systemBlueColor"/>
+                                                                    <connections>
+                                                                        <outlet property="layoutLeft" destination="NxT-KZ-xgn" id="XUY-hb-Hd7"/>
+                                                                        <outlet property="layoutRight" destination="y1v-RD-vul" id="PUK-xp-mIM"/>
+                                                                    </connections>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Hello World!" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bA-4u-rJW">
+                                                                    <rect key="frame" x="12.5" y="12.5" width="359" height="35.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="TNF-zB-ZfV" firstAttribute="leading" secondItem="sQI-Hd-GEc" secondAttribute="leading" constant="5" id="NxT-KZ-xgn"/>
+                                                                <constraint firstItem="TNF-zB-ZfV" firstAttribute="top" secondItem="sQI-Hd-GEc" secondAttribute="top" constant="5" id="Yca-Ve-rYe"/>
+                                                                <constraint firstItem="TNF-zB-ZfV" firstAttribute="height" secondItem="6bA-4u-rJW" secondAttribute="height" constant="15" id="akv-o2-8Bg"/>
+                                                                <constraint firstAttribute="bottom" secondItem="TNF-zB-ZfV" secondAttribute="bottom" constant="5" id="b4R-KQ-loq"/>
+                                                                <constraint firstItem="TNF-zB-ZfV" firstAttribute="centerY" secondItem="6bA-4u-rJW" secondAttribute="centerY" id="iYC-xt-77c"/>
+                                                                <constraint firstItem="TNF-zB-ZfV" firstAttribute="centerX" secondItem="6bA-4u-rJW" secondAttribute="centerX" id="r7x-Pp-Drv"/>
+                                                                <constraint firstItem="TNF-zB-ZfV" firstAttribute="width" secondItem="6bA-4u-rJW" secondAttribute="width" constant="15" id="tAo-Ne-2oa"/>
+                                                                <constraint firstAttribute="trailing" secondItem="TNF-zB-ZfV" secondAttribute="trailing" constant="5" id="y1v-RD-vul"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="jwe-pf-FuU" secondAttribute="trailing" constant="10" id="DKK-8r-JwK"/>
-                                                <constraint firstItem="jwe-pf-FuU" firstAttribute="leading" secondItem="weI-Nj-a8X" secondAttribute="leading" constant="10" id="JVQ-3T-tcB"/>
-                                                <constraint firstAttribute="bottom" secondItem="jwe-pf-FuU" secondAttribute="bottom" id="Xuk-IR-PWx"/>
-                                                <constraint firstItem="jwe-pf-FuU" firstAttribute="top" secondItem="weI-Nj-a8X" secondAttribute="top" id="wq5-EX-2hq"/>
+                                                <constraint firstAttribute="trailing" secondItem="jwe-pf-FuU" secondAttribute="trailing" constant="15" id="DKK-8r-JwK"/>
+                                                <constraint firstItem="jwe-pf-FuU" firstAttribute="leading" secondItem="weI-Nj-a8X" secondAttribute="leading" constant="15" id="JVQ-3T-tcB"/>
+                                                <constraint firstAttribute="bottom" secondItem="jwe-pf-FuU" secondAttribute="bottom" constant="5" id="Xuk-IR-PWx"/>
+                                                <constraint firstItem="jwe-pf-FuU" firstAttribute="top" secondItem="weI-Nj-a8X" secondAttribute="top" constant="5" id="wq5-EX-2hq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="messageBubble" destination="TNF-zB-ZfV" id="24k-B7-vx6"/>
                                             <outlet property="messageLabel" destination="6bA-4u-rJW" id="Aue-7u-gE6"/>
                                             <outlet property="usernameLabel" destination="Ag0-RB-9fE" id="dr3-ty-B9S"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="RE6-y3-bX0" id="4ga-wt-Uyx"/>
+                                    <outlet property="delegate" destination="RE6-y3-bX0" id="Vat-Fg-PKO"/>
+                                </connections>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qev-Ri-Yq1">
-                                <rect key="frame" x="15" y="833" width="384" height="34"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9b-7N-6vR">
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvm-pP-pGO">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="textFieldDidEndEditing" destination="RE6-y3-bX0" eventType="editingDidEnd" id="1lX-dj-TzD"/>
-                                        </connections>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYX-ie-DDi">
-                                        <rect key="frame" x="348" y="0.0" width="36" height="34"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qev-Ri-Yq1">
+                                        <rect key="frame" x="15" y="15" width="384" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvm-pP-pGO">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="RE6-y3-bX0" id="aJx-I4-NS9"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYX-ie-DDi">
+                                                <rect key="frame" x="348" y="0.0" width="36" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="FDg-YF-U1I"/>
+                                                </constraints>
+                                                <state key="normal" title="Send"/>
+                                                <connections>
+                                                    <action selector="send" destination="RE6-y3-bX0" eventType="touchUpInside" id="6Tw-6M-DgY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="36" id="FDg-YF-U1I"/>
+                                            <constraint firstAttribute="height" constant="34" id="fC8-Ve-WRh"/>
                                         </constraints>
-                                        <state key="normal" title="Send"/>
-                                        <connections>
-                                            <action selector="textFieldDidEndEditing" destination="RE6-y3-bX0" eventType="touchUpInside" id="qH2-CM-81x"/>
-                                        </connections>
-                                    </button>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="qev-Ri-Yq1" firstAttribute="leading" secondItem="F9b-7N-6vR" secondAttribute="leading" constant="15" id="MMM-rc-lHZ"/>
+                                    <constraint firstItem="qev-Ri-Yq1" firstAttribute="top" secondItem="F9b-7N-6vR" secondAttribute="top" constant="15" id="gd2-ml-pWf"/>
+                                    <constraint firstAttribute="height" priority="250" constant="80" id="wXg-DH-UDp"/>
+                                    <constraint firstAttribute="trailing" secondItem="qev-Ri-Yq1" secondAttribute="trailing" constant="15" id="xK3-NH-87C"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qev-Ri-Yq1" firstAttribute="top" secondItem="ZvF-ru-Gb4" secondAttribute="bottom" constant="5" id="71B-JR-ZjS"/>
                             <constraint firstItem="ZvF-ru-Gb4" firstAttribute="leading" secondItem="aoc-Fs-gph" secondAttribute="leading" id="7X3-my-hcY"/>
-                            <constraint firstItem="qev-Ri-Yq1" firstAttribute="leading" secondItem="aoc-Fs-gph" secondAttribute="leading" constant="15" id="CXu-JE-CGQ"/>
-                            <constraint firstItem="qev-Ri-Yq1" firstAttribute="bottom" secondItem="aoc-Fs-gph" secondAttribute="bottom" constant="5" id="I5U-FA-Qry"/>
+                            <constraint firstAttribute="bottom" secondItem="F9b-7N-6vR" secondAttribute="bottom" priority="250" id="G9H-fy-Go5"/>
+                            <constraint firstItem="aoc-Fs-gph" firstAttribute="bottom" secondItem="ZvF-ru-Gb4" secondAttribute="bottom" constant="34" id="Oop-PC-bBm"/>
                             <constraint firstItem="aoc-Fs-gph" firstAttribute="trailing" secondItem="ZvF-ru-Gb4" secondAttribute="trailing" id="PpL-xj-lQW"/>
-                            <constraint firstItem="aoc-Fs-gph" firstAttribute="trailing" secondItem="qev-Ri-Yq1" secondAttribute="trailing" constant="15" id="WSK-b3-8Ge"/>
+                            <constraint firstItem="F9b-7N-6vR" firstAttribute="leading" secondItem="idQ-j5-WKf" secondAttribute="leading" id="SUJ-LB-d8S"/>
                             <constraint firstItem="ZvF-ru-Gb4" firstAttribute="top" secondItem="aoc-Fs-gph" secondAttribute="top" id="hMb-po-BtA"/>
+                            <constraint firstAttribute="trailing" secondItem="F9b-7N-6vR" secondAttribute="trailing" id="qJ5-JD-3h7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aoc-Fs-gph"/>
                     </view>
                     <navigationItem key="navigationItem" title="CombineChat" largeTitleDisplayMode="always" id="2cW-L9-Vym">
-                        <barButtonItem key="rightBarButtonItem" title="0" id="JVR-53-fSV"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="0" id="JVR-53-fSV"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="messageStackView" destination="qev-Ri-Yq1" id="uyo-w7-hne"/>
+                        <outlet property="footerView" destination="F9b-7N-6vR" id="AmV-4y-naL"/>
+                        <outlet property="inputField" destination="qvm-pP-pGO" id="6eL-1G-4JT"/>
+                        <outlet property="peerCountBarItem" destination="JVR-53-fSV" id="FtI-zp-sfR"/>
+                        <outlet property="tableView" destination="ZvF-ru-Gb4" id="AXG-sb-6Fv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u46-oi-TiV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -89,7 +89,7 @@ extension ChatService : MCNearbyServiceBrowserDelegate {
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
         print("foundPeer: \(peerID)")
         print("invitePeer: \(peerID)")
-        browser.invitePeer(peerID, to: self.session, withContext: nil, timeout: 10)
+        browser.invitePeer(peerID, to: self.session, withContext: nil, timeout: 60)
     }
     
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
@@ -109,7 +109,7 @@ extension ChatService : MCSessionDelegate {
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         print("didReceiveData: \(data)")
         let str = String(data: data, encoding: .utf8)!
-        let message = ChatMessage(message: str, username: peerID.displayName)
+        let message = ChatMessage(message: str, username: peerID.displayName, my: false)
         self.delegate?.messageReceived(manager: self, message: message)
     }
     
